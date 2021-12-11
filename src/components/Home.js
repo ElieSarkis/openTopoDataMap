@@ -46,7 +46,6 @@ function Home(props) {
 
       <TextField value={latitudeInput} inputProps={{ type: 'number' }} onChange={handleLatitudeChange} id="latitude" label="Latitude" variant="outlined" />
       <TextField value={longitudeInput} inputProps={{ type: 'number' }} onChange={handleLongitudeChange} id="longitude" label="Longitude" variant="outlined" />
-
       {data?.dataset?.length > 0 && data.elevation && <p>The elevation is: {data.elevation}</p>}
 
       <Map google={props.google} zoom={14}>
